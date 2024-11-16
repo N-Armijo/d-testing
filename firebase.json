@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "d-firebase-testing-007",
     "public": "dist",
     "ignore": [
       "firebase.json",
