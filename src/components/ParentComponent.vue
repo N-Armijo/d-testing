@@ -1,21 +1,32 @@
 <script setup>
   import { ref } from 'vue'
   import ChildComponent from '@/components/ChildComponent.vue'
-  
-  const mensaje = ref('Hola desde el componente padre')
-  const textoRecibido = ref('')
-  
+
+  const mensaje = ref('')  
+  const textoRecibido = ref('')  
+
   const handleTexto = (texto) => {
     textoRecibido.value = texto
   }
 </script>
+
 <template>
-  <div>
-    <h1>Componente Padre</h1>
+  <div class="container">
+    <div>
+      <input 
+        type="text" 
+        v-model="mensaje" 
+        placeholder="Escribe un mensaje para el hijo" 
+        class="form-control my-3"
+  
+      />
+      
+      <h4>Mensaje recibido del hijo: {{ textoRecibido }}</h4>
+    </div>
+    
     <ChildComponent
-        :mensajePadre="mensaje"
-        @enviar-texto="handleTexto"
+      :mensajePadre="mensaje"  
+      @enviar-texto="handleTexto" 
     />
-    <p v-if="textoRecibido">Texto recibido del hijo: {{ textoRecibido }}</p>
   </div>
 </template>

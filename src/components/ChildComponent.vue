@@ -1,5 +1,5 @@
 <script setup>
-  import { ref} from 'vue'
+  import { ref } from 'vue'
 
   defineProps({
     mensajePadre: String
@@ -14,10 +14,9 @@
 </script>
 
 <template>
-  <div>
-    <h2>Componente Hijo</h2>
-    <p>Mensaje del padre: {{ mensajePadre }}</p>
-    <input type="text" v-model="texto" />
-    <button @click="enviarTexto">Enviar Emit</button>
+  <div class="card bg-light p-5">
+    <h4>Mensaje del padre: {{ mensajePadre }}</h4> 
+    <input type="text" v-model="texto" placeholder="Escribe mensaje a padre" class="form-control" />
+    <button @click="enviarTexto" class="btn btn-secondary my-2">Enviar Emit</button>
   </div>
 </template>

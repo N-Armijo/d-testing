@@ -11,11 +11,11 @@ describe('ChildComponent.vue', () => {
     })
     expect(wrapper.text()).toContain('Mensaje del padre: Mensaje de prueba')
   })
-
   it('debería emitir el texto ingresado al hacer clic en el botón', async () => {
     const wrapper = mount(ChildComponent)
 
     await wrapper.find('input').setValue('texto ingresado')
+
     await wrapper.find('button').trigger('click')
 
     expect(wrapper.emitted('enviar-texto')[0]).toEqual(['texto ingresado'])
