@@ -1,4 +1,4 @@
-# prueba_mod7
+# desafio_mod_7_testing
 
 This template should help get you started developing with Vue 3 in Vite.
 
