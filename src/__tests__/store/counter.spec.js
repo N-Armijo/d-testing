@@ -3,13 +3,11 @@ import { setActivePinia, createPinia } from 'pinia'
 import { useCounterStore } from '@/stores/counter'
 
 describe('useCounter', () => {
-  //define ambiente de pruebas
   beforeEach(() => {
     setActivePinia(createPinia())
   })
 
   it('contador inicial 0', () => {
-    //instancia y usa store definido
     const counterStore = useCounterStore()
 
     expect(counterStore.count).toBe(0)
