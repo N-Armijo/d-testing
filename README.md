@@ -1,6 +1,11 @@
 # desafio_mod_7_testing
 
-This template should help get you started developing with Vue 3 in Vite.
+## Live Demo
+
+El proyecto está desplegado en Firebase Hosting y puedes acceder al siguiente enlace:  
+[https://d-firebase-testing-46d5e.web.app](https://d-firebase-testing-46d5e.web.app)
+
+
 
 ## Recommended IDE Setup
 
